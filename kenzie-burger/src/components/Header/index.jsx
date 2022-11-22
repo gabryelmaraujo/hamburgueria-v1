@@ -1,21 +1,22 @@
 
 import React from "react"
 
-import "./styles"
-
 import HeaderLogo from "../HeaderLogo"
 import InputSearch from "../InputSearch"
+import AppHeader from "./styles.js"
 
 
 const Header = () => {
 
     return (
 
-        <header className="appHeader">
-            <HeaderLogo/>
+        <AppHeader className="appHeader">
+            <div className="headerContainer">
+                <HeaderLogo/>
 
-            <InputSearch/>
-        </header>
+                <InputSearch/>
+            </div>
+        </AppHeader>
 
     )
 

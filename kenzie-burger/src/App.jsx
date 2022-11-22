@@ -2,7 +2,9 @@ import './App.css'
 import './reset.css'
 import './global.css'
 
-import React from 'react'
+import React, {useState} from 'react'
+
+import styled from 'styled-components'
 
 import logo from './logo.svg'
 import Header from './components/Header'
