@@ -1,17 +1,20 @@
-import './App.css'
-import './reset.css'
-import './global.css'
-
 import React, {useState} from 'react'
+
+import ResetStyles from './resetStyles'
+import GlobalStyles from './globalStyles'
+import './App.css'
+import './global.css'
 
 import styled from 'styled-components'
 
-import logo from './logo.svg'
 import Header from './components/Header'
 
 function App() {
   return (
     <div className="App">
+      <ResetStyles/>
+      <GlobalStyles/>
+
       <Header/>
     </div>
   );
