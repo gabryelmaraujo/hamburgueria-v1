@@ -4,11 +4,11 @@ import ResetStyles from './resetStyles'
 import GlobalStyles from './globalStyles'
 import './App.css'
 
-import styled from 'styled-components'
-
 import Header from './components/Header'
-import ProductsCard from './components/ProductsCard'
+
 import ProductsList from './components/ProductsList'
+import Cart from './components/Cart'
+import MainContainer from './styles/MainContainer'
 
 function App() {
   return (
@@ -18,7 +18,11 @@ function App() {
 
       <Header/>
 
-      <ProductsList/>
+      <MainContainer>
+        <ProductsList/>
+
+        <Cart/>
+      </MainContainer>
     </div>
   );
 }
