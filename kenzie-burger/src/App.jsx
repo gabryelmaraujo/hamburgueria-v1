@@ -3,11 +3,11 @@ import React, {useState} from 'react'
 import ResetStyles from './resetStyles'
 import GlobalStyles from './globalStyles'
 import './App.css'
-import './global.css'
 
 import styled from 'styled-components'
 
 import Header from './components/Header'
+import ProductsCard from './components/ProductsCard'
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
       <GlobalStyles/>
 
       <Header/>
+
+      <ProductsCard/>
     </div>
   );
 }
