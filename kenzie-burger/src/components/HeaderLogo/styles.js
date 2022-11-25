@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const LogoHeader = styled.div`
 
+
     .logoText{
         font-style: normal;
         font-weight: var(--font-w-1);

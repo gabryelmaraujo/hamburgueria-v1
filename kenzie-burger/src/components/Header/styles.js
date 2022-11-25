@@ -10,7 +10,7 @@ const AppHeader = styled.header`
     .headerContainer{
 
         height: 100%;
-        width: 1100px;
+        width: 1200px;
         margin: 0 auto;
 
         display: flex;

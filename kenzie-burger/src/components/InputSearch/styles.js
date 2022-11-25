@@ -5,6 +5,7 @@ const SearchDiv = styled.div`
 
     height: 60px;
     padding: 0 10px;
+    width: 285px;
 
     background-color: var(--white);
 
@@ -14,8 +15,13 @@ const SearchDiv = styled.div`
     display: flex;
     align-items: center;
 
+    .searchForm{
+        width: 100%;
+    }
+
     #searchInput{
         height: 56px;
+        margin-right: 10px;
         border-top: 0px;
         border-left: 0px;
         border-bottom: 0px;

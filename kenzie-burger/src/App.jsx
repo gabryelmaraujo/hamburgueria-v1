@@ -9,6 +9,7 @@ import styled from 'styled-components'
 import Header from './components/Header'
 import ProductsCard from './components/ProductsCard'
 import ProductsList from './components/ProductsList'
+import Cart from './components/Cart'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <Header/>
 
       <ProductsList/>
+
+      <Cart/>
     </div>
   );
 }
