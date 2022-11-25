@@ -1,5 +1,11 @@
 import React from "react";
+
+import EmptyCard from "./EmptyCart";
+
+import CartProducts from "./CartProducts";
 import CartContainer from "./styles";
+import TotalCart from "./CartTotal";
+
 
 const Cart = () => {
 
@@ -7,15 +13,22 @@ return(
 
     <CartContainer>
         <header className="cartHeader">
-            <h2 className="cartTitle">
+            <p className="cartTitle">
                 Carrinho de compras
-            </h2>
+            </p>
         </header>
         <main className="cartMain">
-            <div className="emptyCartDiv">
-                <p className="emptyCartTitle">Sua sacola está vazia</p>
-                <p className="emptyCartText">Adicione itens</p>
+            
+            <EmptyCard/>
+
+            <div className="cartListDiv">
+                <ul className="cartList">
+                    {/* <CartProducts/> */}
+                </ul>
             </div>
+
+            {/* <TotalCart/> */}
+
         </main>
     </CartContainer>
 

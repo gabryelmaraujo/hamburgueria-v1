@@ -1,57 +1,12 @@
 import styled from "styled-components";
 
-const CartContainer = styled.div`
+const CartItem = styled.li`
 
-    width: 300px;
-
-    .cartHeader{
-        background-color: var(--brand-1);
-        color: var(--white);
-
-        height: 60px;
-        padding: 0 20px;
-
-        border-radius: 5px 5px 0px 0px;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        font-size: var(--title-3);
-        font-weight: var(--font-w-1);
-
-    }
-
-    .cartMain{
-        min-height: 158px;
-        width: 100%;
-
-        border-radius: 0px 0px 5px 5px;
-
-        background-color: var(--grey-0);
-
-    }
-
-    .cartList{
-        padding: 10px 10px;
-        max-height: 330px;
-        overflow-y: scroll;
-        
-    }
-
-    .cartList::-webkit-scrollbar {
-    width: 0px;
-    }
-
-
-    .cartItem{
         display: flex;
 
         height: 80px;
 
         margin-bottom: 20px;
-        
-    }
 
     .cartItemImgDiv{
         width: 70px;
@@ -97,6 +52,6 @@ const CartContainer = styled.div`
     }
     
 
-`
 
-export default CartContainer
+`
+export default CartItem
