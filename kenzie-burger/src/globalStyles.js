@@ -26,10 +26,10 @@ const GlobalStyles = createGlobalStyle`
 --text-2: 14px;
 --text-3: 12px;
 
---font-h-1: 700;
---font-h-2: 600;
---font-h-3: 500;
---font-h-4: 400;
+--font-w-1: 700;
+--font-w-2: 600;
+--font-w-3: 500;
+--font-w-4: 400;
 
 }
 
