@@ -18,13 +18,13 @@ const GlobalStyles = createGlobalStyle`
 --warning: #FFCD07;
 --info: #155BCB;
 
---title-1: 26px;
---title-2: 22px;
---title-3: 18px;
+--title-1: 1.625rem; /* 26px */
+--title-2: 1.375rem; /* 22px */
+--title-3: 1.125rem; /* 18px */
 
---text-1: 16px;
---text-2: 14px;
---text-3: 12px;
+--text-1: 1rem; /* 16px */
+--text-2: 0.875rem; /* 14px */
+--text-3: 0.75rem; /* 12px */
 
 --font-w-1: 700;
 --font-w-2: 600;

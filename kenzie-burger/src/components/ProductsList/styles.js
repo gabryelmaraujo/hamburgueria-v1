@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const ListContainer = styled.div`
 
-    width: 840px;
+    width: 52.5rem;
 
     display: flex;
     flex-wrap: wrap;

@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const SearchDiv = styled.div`
 
-    height: 60px;
-    padding: 0 10px;
-    width: 285px;
+    height: 3.75rem;
+    padding: 0 0.625rem;
+    width: 17.813rem;
 
     background-color: var(--white);
 
-    border: 1px solid var(--grey-1);
-    border-radius: 8px;
+    border: 0.063rem solid var(--grey-1);
+    border-radius: 0.5rem;
 
     display: flex;
     align-items: center;
@@ -20,25 +20,22 @@ const SearchDiv = styled.div`
     }
 
     #searchInput{
-        height: 56px;
-        margin-right: 10px;
-        border-top: 0px;
-        border-left: 0px;
-        border-bottom: 0px;
-        border-right: 0px;
+        height: 3.5rem;
+        margin-right: 0.625rem;
+        border: 0rem;
     }
 
     .searchBttn{
-        height: 40px;
+        height: 2.5rem;
 
         background-color: var(--brand-1);
         color: var(--grey-0);
 
-        border-top: 1px solid var(--grey-1);
-        border-right: 1px solid var(--grey-1);
-        border-bottom: 1px solid var(--grey-1);
-        border-left: 0px;
-        border-radius: 8px;
+        border-top: 0.063rem solid var(--grey-1);
+        border-right: 0.063rem solid var(--grey-1);
+        border-bottom: 0.063rem solid var(--grey-1);
+        border-left: 0rem;
+        border-radius: 0.5rem;
     }
 
 `

@@ -7,7 +7,7 @@ const LogoHeader = styled.div`
         font-style: normal;
         font-weight: var(--font-w-1);
         font-size: var(--title-3);
-        line-height: 24px
+        line-height: 1.5rem
     }
 
     .logoTextSpan{

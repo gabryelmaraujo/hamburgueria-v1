@@ -4,30 +4,30 @@ const CartItem = styled.li`
 
         display: flex;
 
-        height: 80px;
+        height: 5rem;
 
-        margin-bottom: 20px;
+        margin-bottom: 1.25rem;
 
     .cartItemImgDiv{
-        width: 70px;
-        height: 70px;
+        width: 4.375rem;
+        height: 4.375rem;
     
-        margin-right: 10px;
+        margin-right: 0.625rem;
 
         background-color: var(--grey-1);
 
-        border-radius: 5px;
+        border-radius: 0.313rem;
     }
 
     .cartItemImg{
-        width: 70px;
-        height: 70px;
+        width: 4.375rem;
+        height: 4.375rem;
     }
 
     .cartItemInfosDiv{
-        width: 170px;
+        width: 10.625rem;
 
-        padding: 10px 0;
+        padding: 0.625rem 0;
 
         display: flex;
         flex-direction: column;
@@ -35,14 +35,14 @@ const CartItem = styled.li`
     }
 
     .cartItemTitle{
-        margin-bottom: 15px;
+        margin-bottom: 0.938rem;
         font-weight: var(--font-w-1);
     }
 
     .cartItemDesc{}
 
     .cartItemButtons{
-        padding: 10px 0;
+        padding: 0.625rem 0;
     }
 
     #removeCartItemBttn{
