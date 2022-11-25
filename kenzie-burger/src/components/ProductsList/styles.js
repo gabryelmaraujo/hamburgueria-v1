@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
-const StyledList = styled.div`
-    background-color: black;
+const ListContainer = styled.div`
+
+    width: 840px;
+    margin: 40px 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 `
 
-export default StyledList
+export default ListContainer
