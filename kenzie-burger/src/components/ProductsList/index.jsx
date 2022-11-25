@@ -1,10 +1,21 @@
 import React from "react";
+import ProductsCard from "../ProductsCard";
+import ListContainer from "./styles";
 
 const ProductsList = () => {
 
 return(
 
-    <div></div>
+    <ListContainer>
+
+        <ProductsCard/>
+        <ProductsCard/>
+        <ProductsCard/>
+        <ProductsCard/>
+        <ProductsCard/>
+        <ProductsCard/>
+
+    </ListContainer>
 
 )
 

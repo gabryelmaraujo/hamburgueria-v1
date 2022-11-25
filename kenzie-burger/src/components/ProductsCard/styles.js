@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
 
-    width: 300px;
+    width: 250px;
     border: 2px solid var(--grey-1);
     border-radius: 5px;
+    margin-bottom: 20px;
 
     .productImgDiv{
         height: 150px;
