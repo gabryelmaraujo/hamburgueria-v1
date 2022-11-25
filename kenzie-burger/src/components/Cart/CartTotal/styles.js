@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const TotalCartDiv = styled.div`
 
-        border-top: 2px solid var(--grey-1);
-        padding: 10px;
-        height: 120px;
+        border-top: 0.125rem solid var(--grey-1);
+        padding: 0.625rem;
+        height: 7.5rem;
 
         display: flex;
         flex-direction: column;
@@ -30,13 +30,13 @@ const TotalCartDiv = styled.div`
 
     #cartPayBttn{
         width: 100%;
-        padding: 20px 0;
+        padding: 1.25rem 0;
 
         color: var(--grey-2);
         background-color: var(--grey-1);
 
-        border: 1px solid var(--grey-1);
-        border-radius: 8px;
+        border: 0.063rem solid var(--grey-1);
+        border-radius: 0.5rem;
 
         font-weight: var(--font-w-2);
         font-size: var(--text-1);

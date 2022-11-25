@@ -2,26 +2,26 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
 
-    width: 250px;
-    border: 2px solid var(--grey-1);
-    border-radius: 5px;
-    margin-bottom: 20px;
+    width: 15.625rem;
+    border: 0.125rem solid var(--grey-1);
+    border-radius: 0.313rem;
+    margin-bottom: 1.25rem;
 
     .productImgDiv{
-        height: 150px;
+        height: 9.375rem;
         background-color: var(--grey-0);
-        margin-bottom: 26px;
+        margin-bottom: 1.625rem;
     }
 
     .productMain{
-        padding: 0 12px;
+        padding: 0 0.75rem;
     }
 
     .productInfosDiv{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 14px;
+        gap: 0.875rem;
     }
 
     .productName{}
@@ -38,16 +38,16 @@ const StyledCard = styled.div`
     .productBttnDiv{
         display: flex;
         align-items: flex-start;
-        margin-top: 14px;
-        margin-bottom: 23px;
+        margin-top: 0.875rem;
+        margin-bottom: 1.438rem;
     }
     
     #productBttn{
-        height: 40px;
-        padding: 0 20px;
+        height: 2.5rem;
+        padding: 0 1.25rem;
 
-        border: 1px solid var(--brand-1);
-        border-radius: 8px;
+        border: 0.063rem solid var(--brand-1);
+        border-radius: 0.5rem;
 
         background-color: var(--brand-1);
         color: var(--white);

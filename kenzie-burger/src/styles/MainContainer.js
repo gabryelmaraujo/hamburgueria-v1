@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const MainContainer = styled.div`
-    width: 1200px;
-    margin: 26px auto;
+    width: 75rem;
+    margin: 1.625rem auto;
     padding: 0;
 
     display: flex;
