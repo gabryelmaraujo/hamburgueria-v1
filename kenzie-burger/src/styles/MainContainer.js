@@ -24,6 +24,7 @@ const MainContainer = styled.div`
             overflow-x: scroll;
 
             max-width: 85%;
+
         }
     }
 
