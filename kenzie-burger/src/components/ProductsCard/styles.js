@@ -15,6 +15,12 @@ const StyledCard = styled.li`
         height: 9.375rem;
         background-color: var(--grey-0);
         margin-bottom: 1.625rem;
+
+    }
+
+    .productImg{
+        width: 140px;
+        height: 140px;
     }
 
     .productMain{
@@ -28,7 +34,10 @@ const StyledCard = styled.li`
         gap: 0.875rem;
     }
 
-    .productName{}
+    .productName{
+        text-align: initial;
+        font-size: var(--title-3);
+    }
     .productType{
         color: var(--grey-2);
         font-size: var(--text-3);

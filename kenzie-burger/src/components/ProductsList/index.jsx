@@ -1,20 +1,29 @@
-import React from "react";
+
 import ProductsCard from "../ProductsCard";
 import ListContainer from "./styles";
 
-const ProductsList = () => {
+const ProductsList = ({products}) => {
+
+
 
 return(
 
     <div className="listOverflow">
     <ListContainer>
+    {
+        products.map((product)=>{
+            const productId = product.id 
+            const productName = product.name 
+            const productCategory = product.category
+            const productPrice = product.price 
+            const productImg = product.img
 
-        <ProductsCard/>
-        <ProductsCard/>
-        <ProductsCard/>
-        <ProductsCard/>
-        <ProductsCard/>
-        <ProductsCard/>
+            return(
+                <ProductsCard productId={productId} productName={productName} productCategory={productCategory} productPrice={productPrice} productImg={productImg}/>
+            )
+        })
+    }
+        {/* <ProductsCard/> */}
 
     </ListContainer>
     </div>
