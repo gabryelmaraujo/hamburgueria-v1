@@ -16,7 +16,7 @@ const ProductsCard = ({productId, productName, productCategory, productPrice, pr
                 <div className="productInfosDiv">
                     <h2 className="productName">{productName}</h2>
                     <p className="productType">{productCategory}</p>
-                    <p className="productPrice">R$ {productPrice}</p>
+                    <p className="productPrice">{productPrice}</p>
                 </div>
                 <AddProductBttn/>
             </div>

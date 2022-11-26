@@ -15,7 +15,7 @@ return(
             const productId = product.id 
             const productName = product.name 
             const productCategory = product.category
-            const productPrice = product.price 
+            const productPrice = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
             const productImg = product.img
 
             return(
