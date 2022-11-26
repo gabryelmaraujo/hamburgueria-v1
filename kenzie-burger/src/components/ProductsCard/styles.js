@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-const StyledCard = styled.div`
+const StyledCard = styled.li`
 
     width: 15.625rem;
     border: 0.125rem solid var(--grey-1);
     border-radius: 0.313rem;
     margin-bottom: 1.25rem;
+
+    @media (max-width: 870px){
+        margin-right: 1.25rem;
+    }
 
     .productImgDiv{
         height: 9.375rem;

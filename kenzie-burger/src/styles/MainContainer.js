@@ -8,6 +8,25 @@ const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
 
+    @media (max-width:1200px){
+        flex-direction: column;
+        align-items: center;
+
+        max-width: 100%;
+
+    }
+
+    @media (max-width: 870px){
+        
+        .listOverflow{
+            padding: 0;
+
+            overflow-x: scroll;
+
+            max-width: 85%;
+        }
+    }
+
 `
 
 export default MainContainer

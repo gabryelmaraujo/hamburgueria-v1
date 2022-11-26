@@ -6,6 +6,7 @@ const ProductsList = () => {
 
 return(
 
+    <div className="listOverflow">
     <ListContainer>
 
         <ProductsCard/>
@@ -16,6 +17,7 @@ return(
         <ProductsCard/>
 
     </ListContainer>
+    </div>
 
 )
 
