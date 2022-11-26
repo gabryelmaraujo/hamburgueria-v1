@@ -1,24 +1,24 @@
 import React from "react";
 import productImg from "../../assets/product1.svg"
+import AddProductBttn from "./AddProductBttn";
 import StyledCard from "./styles";
 
-const ProductsCard = () => {
+const ProductsCard = ({productId, productName, productCategory, productPrice, productImg}) => {
+
 
     return ( 
-        <StyledCard>
+        <StyledCard key={productId} id={productId}>
 
             <div className="productImgDiv">
-                <img src={productImg} alt="" className="productImg" />
+                <img src={productImg} alt={productName} className="productImg" />
             </div>
             <div className="productMain">
                 <div className="productInfosDiv">
-                    <h2 className="productName">Hamburguer</h2>
-                    <p className="productType">Sanduíche</p>
-                    <p className="productPrice">R$ 14.00</p>
+                    <h2 className="productName">{productName}</h2>
+                    <p className="productType">{productCategory}</p>
+                    <p className="productPrice">R$ {productPrice}</p>
                 </div>
-                <div className="productBttnDiv">
-                    <button id="productBttn">Adicionar</button>
-                </div>
+                <AddProductBttn/>
             </div>
 
         </StyledCard>
