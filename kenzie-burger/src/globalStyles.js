@@ -2,6 +2,11 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
 :root{
 
 --brand-1: #27AE60;
