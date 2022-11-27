@@ -1,13 +1,13 @@
 import React from "react";
 
-import EmptyCard from "./EmptyCart";
+import EmptyCart from "./EmptyCart";
 
 import CartProducts from "./CartProducts";
 import CartContainer from "./styles";
 import TotalCart from "./CartTotal";
 
 
-const Cart = () => {
+const Cart = ({productsCart, setProductsCart}) => {
 
 return(
 
@@ -18,16 +18,27 @@ return(
             </p>
         </header>
         <main className="cartMain">
-            
-            <EmptyCard/>
 
             <div className="cartListDiv">
                 <ul className="cartList">
-                    {/* <CartProducts/> */}
-                </ul>
-            </div>
 
-            {/* <TotalCart/> */}
+                    { productsCart.length > 0 ? (productsCart.map((product)=>{
+                            const productId = product.id 
+                            const productName = product.name 
+                            const productCategory = product.category
+                            const productPrice = product.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+                            const productImg = product.img
+
+                            return(
+                                <CartProducts key={productId} productId={productId} productName={productName} productCategory={productCategory} productPrice={productPrice} productImg={productImg} productsCart={productsCart} setProductsCart={setProductsCart}/>
+                            )
+                        })) : (
+                            <EmptyCart/>
+                        )}
+                </ul>
+
+                { productsCart.length > 0 ? ( <TotalCart productsCart={productsCart}/> ) : ('')}
+            </div>
 
         </main>
     </CartContainer>

@@ -34,7 +34,7 @@ function App() {
   }, [])
 
   const [filteredProducts, setFilteredProducts] = useState([])
-  const [currentSale, setCurrentSale] = useState([])
+  const [productsCart, setProductsCart] = useState([])
   const [cartTotal, setCartTotal] = useState(0)
 
 
@@ -48,9 +48,9 @@ function App() {
       <Header/>
 
       <MainContainer>
-        <ProductsList products={products} filteredProducts={filteredProducts}/>
+        <ProductsList key="productsList" products={products} filteredProducts={filteredProducts} setProductsCart={setProductsCart} productsCart={productsCart}/>
 
-        <Cart currentSale={currentSale} cartTotal={cartTotal}/>
+        <Cart productsCart={productsCart} setProductsCart={setProductsCart} cartTotal={cartTotal}/>
       </MainContainer>
     </div>
   );

@@ -1,17 +1,16 @@
 import React from "react";
 
-import productImg from "../../../assets/product1.svg"
 import CartItem from "./styles";
 
-const CartProducts = () => {
+const CartProducts = ({productId, productName, productCategory, productPrice, productImg}) => {
   return (
-    <CartItem>
+    <CartItem id={productId} key={productId}>
       <div className="cartItemImgDiv">
         <img src={productImg} alt="" className="cartItemImg" />
       </div>
       <div className="cartItemInfosDiv">
-        <p className="cartItemTitle">Hamburger </p>
-        <p className="cartItemDesc">X-Burge</p>
+        <p className="cartItemTitle">{productName} </p>
+        <p className="cartItemDesc">{productCategory}</p>
       </div>
       <div className="cartItemButtons">
         <button id="removeCartItemBttn">Remover</button>
