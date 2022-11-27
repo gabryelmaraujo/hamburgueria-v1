@@ -2,7 +2,7 @@ import React from "react";
 
 import CartItem from "./styles";
 
-const CartProducts = ({productId, productName, productCategory, productPrice, productImg}) => {
+const CartProducts = ({productId, productName, productCategory, productPrice, productImg, removeCartProduct}) => {
   return (
     <CartItem id={productId} key={productId}>
       <div className="cartItemImgDiv">
@@ -13,7 +13,7 @@ const CartProducts = ({productId, productName, productCategory, productPrice, pr
         <p className="cartItemDesc">{productCategory}</p>
       </div>
       <div className="cartItemButtons">
-        <button id="removeCartItemBttn">Remover</button>
+        <button id="removeCartItemBttn" onClick={()=>{removeCartProduct(productId)}}>Remover</button>
       </div>
     </CartItem>
   );
