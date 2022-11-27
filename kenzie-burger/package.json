@@ -10,7 +10,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "react-toastify": "^9.1.1",
+=======
+>>>>>>> main
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.0"
   },
