@@ -1,9 +1,9 @@
 import React from "react";
-import productImg from "../../assets/product1.svg"
+
 import AddProductBttn from "./AddProductBttn";
 import StyledCard from "./styles";
 
-const ProductsCard = ({productId, productName, productCategory, productPrice, productImg}) => {
+const ProductsCard = ({productId, productName, productCategory, productPrice, productImg, addCartProduct}) => {
 
 
     return ( 
@@ -18,7 +18,7 @@ const ProductsCard = ({productId, productName, productCategory, productPrice, pr
                     <p className="productType">{productCategory}</p>
                     <p className="productPrice">{productPrice}</p>
                 </div>
-                <AddProductBttn/>
+                <AddProductBttn addCartProduct={addCartProduct}/>
             </div>
 
         </StyledCard>

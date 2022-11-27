@@ -3,7 +3,7 @@ import React from "react"
 import styled from "styled-components"
 import EmptyCartDiv from "./styles"
 
-const EmptyCard = () => {
+const EmptyCart = () => {
 
 return(
     <EmptyCartDiv>
@@ -14,4 +14,4 @@ return(
 
 }
 
-export default EmptyCard
+export default EmptyCart
