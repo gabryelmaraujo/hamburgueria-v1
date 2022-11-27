@@ -1,4 +1,6 @@
 import React from "react";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 import EmptyCart from "./EmptyCart";
 
@@ -9,7 +11,13 @@ import TotalCart from "./CartTotal";
 
 const Cart = ({productsCart, setProductsCart}) => {
 
-    
+    const removeNotify = () => { 
+        toast.success("O produto foi removido do carrinho!", {
+          position: toast.POSITION.TOP_RIGHT
+        });
+      }
+
+
     function removeCartProduct(id){
         
         const onCart = [...productsCart]
@@ -17,11 +25,13 @@ const Cart = ({productsCart, setProductsCart}) => {
         const filteredCart = onCart.filter((product) => product.id != id)
 
         setProductsCart(filteredCart)
+        removeNotify()
+
+        
 
     }
 
 return(
-
     <CartContainer>
         <header className="cartHeader">
             <p className="cartTitle">
