@@ -1,9 +1,19 @@
+import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 import ProductsCard from "../ProductsCard";
 import ListContainer from "./styles";
 
+
+
 const ProductsList = ({products, setProductsCart, productsCart, search}) => {
 
+    const addNotify = () => { 
+        toast.error("Você já adicionou esse produto no carrinho!", {
+          position: toast.POSITION.TOP_RIGHT
+        });
+      }
 
     function addCartProduct(id){
 
@@ -19,7 +29,7 @@ const ProductsList = ({products, setProductsCart, productsCart, search}) => {
         })
 
         if(cartChecker != undefined){
-            alert('aqui')
+            addNotify()
         }
 
 
@@ -30,6 +40,7 @@ const ProductsList = ({products, setProductsCart, productsCart, search}) => {
 return(
 
     <div className="listOverflow">
+    <ToastContainer autoClose={2000}/>
     <ListContainer key="listContainer">
     {
         filteredProducts.map((product)=>{

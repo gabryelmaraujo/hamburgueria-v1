@@ -37,6 +37,7 @@ const CartItem = styled.li`
     .cartItemTitle{
         margin-bottom: 0.938rem;
         font-weight: var(--font-w-1);
+        text-align: start;
     }
 
     .cartItemDesc{}
