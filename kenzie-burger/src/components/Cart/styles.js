@@ -39,6 +39,12 @@ const CartContainer = styled.div`
         
     }
 
+    @media (max-width: 870px){
+        .cartList{
+            max-height: 100px;
+        }
+    }
+
     .cartList::-webkit-scrollbar {
     width: 0px;
     }

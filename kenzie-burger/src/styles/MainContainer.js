@@ -8,6 +8,12 @@ const MainContainer = styled.div`
     display: flex;
     justify-content: space-between;
 
+    .listOverflow{
+        
+        margin-bottom: 30px;
+        
+    }
+
     @media (max-width:1200px){
         flex-direction: column;
         align-items: center;
