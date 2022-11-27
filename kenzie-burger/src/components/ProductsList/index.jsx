@@ -18,7 +18,17 @@ const ProductsList = ({products, filteredProducts, setProductsCart, productsCart
 
     }
 
-    function removeCartProduct(){}
+    function removeCartProduct(id){
+        
+        productsCart.map((product) => {
+            const productId = product.id
+            
+            if(id == productId){
+                setProductsCart.filter((product) => product.id != id)
+            }
+        })
+
+    }
 
 
 return(

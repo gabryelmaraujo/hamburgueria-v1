@@ -9,6 +9,17 @@ import TotalCart from "./CartTotal";
 
 const Cart = ({productsCart, setProductsCart}) => {
 
+    
+    function removeCartProduct(id){
+        
+        const onCart = [...productsCart]
+
+        const filteredCart = onCart.filter((product) => product.id != id)
+
+        setProductsCart(filteredCart)
+
+    }
+
 return(
 
     <CartContainer>
@@ -30,7 +41,7 @@ return(
                             const productImg = product.img
 
                             return(
-                                <CartProducts key={productId} productId={productId} productName={productName} productCategory={productCategory} productPrice={productPrice} productImg={productImg} productsCart={productsCart} setProductsCart={setProductsCart}/>
+                                <CartProducts key={productId} productId={productId} productName={productName} productCategory={productCategory} productPrice={productPrice} productImg={productImg} productsCart={productsCart} setProductsCart={setProductsCart} removeCartProduct={removeCartProduct}/>
                             )
                         })) : (
                             <EmptyCart/>
