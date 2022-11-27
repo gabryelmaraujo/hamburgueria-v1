@@ -6,7 +6,7 @@ import InputSearch from "../InputSearch"
 import AppHeader from "./styles.js"
 
 
-const Header = () => {
+const Header = ({products, setProducts, search, setSearch}) => {
 
     return (
 
@@ -14,7 +14,7 @@ const Header = () => {
             <div className="headerContainer">
                 <HeaderLogo/>
 
-                <InputSearch/>
+                <InputSearch products={products} setProducts={setProducts} search={search} setSearch={setSearch}/>
             </div>
         </AppHeader>
 
