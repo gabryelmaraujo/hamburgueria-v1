@@ -7,13 +7,20 @@ const ProductsList = ({products, setProductsCart, productsCart, search}) => {
 
     function addCartProduct(id){
 
+        const cartChecker = productsCart.find((product)=> product.id == id)
+
         products.map((product)=>{
             const productId = product.id 
 
-            if(id == productId){
+            if(cartChecker == undefined && id == productId){
                 setProductsCart([...productsCart, product])
             }
+
         })
+
+        if(cartChecker != undefined){
+            alert('aqui')
+        }
 
 
     }
