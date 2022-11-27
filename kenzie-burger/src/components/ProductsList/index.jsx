@@ -2,7 +2,7 @@
 import ProductsCard from "../ProductsCard";
 import ListContainer from "./styles";
 
-const ProductsList = ({products, filteredProducts, setProductsCart, productsCart}) => {
+const ProductsList = ({products, setProductsCart, productsCart, search}) => {
 
 
     function addCartProduct(id){
@@ -18,25 +18,14 @@ const ProductsList = ({products, filteredProducts, setProductsCart, productsCart
 
     }
 
-    function removeCartProduct(id){
-        
-        productsCart.map((product) => {
-            const productId = product.id
-            
-            if(id == productId){
-                setProductsCart.filter((product) => product.id != id)
-            }
-        })
-
-    }
-
+     const filteredProducts = products.filter((product)=> product.name.toLowerCase().includes(search.toLowerCase()))
 
 return(
 
     <div className="listOverflow">
     <ListContainer key="listContainer">
     {
-        products.map((product)=>{
+        filteredProducts.map((product)=>{
             const productId = product.id 
             const productName = product.name 
             const productCategory = product.category

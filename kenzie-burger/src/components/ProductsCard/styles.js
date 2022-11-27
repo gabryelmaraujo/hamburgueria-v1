@@ -6,6 +6,7 @@ const StyledCard = styled.li`
     border: 0.125rem solid var(--grey-1);
     border-radius: 0.313rem;
     margin-bottom: 1.25rem;
+    margin-right: 1.625rem;
 
     @media (max-width: 870px){
         margin-right: 1.25rem;

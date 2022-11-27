@@ -36,6 +36,7 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState([])
   const [productsCart, setProductsCart] = useState([])
   const [cartTotal, setCartTotal] = useState(0)
+  const [search, setSearch] = useState('')
 
 
 
@@ -45,10 +46,10 @@ function App() {
       <ResetStyles/>
       <GlobalStyles/>
 
-      <Header/>
+      <Header products={products} setProducts={setProducts} search={search} setSearch={setSearch}/>
 
       <MainContainer>
-        <ProductsList key="productsList" products={products} filteredProducts={filteredProducts} setProductsCart={setProductsCart} productsCart={productsCart}/>
+        <ProductsList key="productsList" products={products} setProductsCart={setProductsCart} productsCart={productsCart} search={search}/>
 
         <Cart productsCart={productsCart} setProductsCart={setProductsCart} cartTotal={cartTotal}/>
       </MainContainer>
